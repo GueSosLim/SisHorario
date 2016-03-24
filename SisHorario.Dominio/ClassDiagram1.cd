@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SisHorario.Dominio.Ambiente">
+    <Position X="2.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAABAACAAAQAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Ambiente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SisHorario.Dominio.CargaPersonal">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAICAAAAAAABAAAAAAAAAAAEAAAAIEAAEEIAAAA=</HashCode>
+      <FileName>CargaPersonal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CodPersonal" />
+      <Property Name="CodSemestre" />
+      <Property Name="CodCiclo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SisHorario.Dominio.Ciclo">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Ciclo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SisHorario.Dominio.Curso">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQCIAAAAAEAIAAQAAAAAEAECAAAKEAAAUAAAAA=</HashCode>
+      <FileName>Curso.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CodPlanEstudio" />
+      <Property Name="CodCiclo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SisHorario.Dominio.DisponibilidadPersonal">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAIAAAAAAAEhAAAAAAAAAAAAAAAAAIAAEAIAAAA=</HashCode>
+      <FileName>DisponibilidadPersonal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CodPersonal" />
+      <Property Name="CodHora" />
+      <Property Name="CodSemestre" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SisHorario.Dominio.Hora">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIIAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAIAAAQ=</HashCode>
+      <FileName>Hora.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SisHorario.Dominio.Horario">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAoCAAEAAIAAACAAABAAAAAAAAEAIEAAEMIAAAA=</HashCode>
+      <FileName>Horario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CodPersonal" />
+      <Property Name="CodCiclo" />
+      <Property Name="CodSemestre" />
+      <Property Name="CodAmbiente" />
+      <Property Name="CodCurso" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SisHorario.Dominio.Personal">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACAAQAgQIAAAAAgAAEgAAACAAAAEAAAAAU=</HashCode>
+      <FileName>Personal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SisHorario.Dominio.PlanEstudio">
+    <Position X="10.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAACAAAAAAAAAAAEAQAAAAAAAAAAAAQ=</HashCode>
+      <FileName>PlanEstudio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SisHorario.Dominio.Semestre">
+    <Position X="7.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABYAQAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Semestre.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CodPlanEstudio" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
