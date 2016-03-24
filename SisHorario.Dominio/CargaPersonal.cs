@@ -23,5 +23,22 @@ namespace SisHorario.Dominio
         {
 
         }
+
+        public static CargaPersonal Registrar(int ai_cod_car_personal, string as_seccion, Personal cod_personal, Semestre cod_semestre, Ciclo cod_ciclo, Curso cod_curso )
+        {
+            return new CargaPersonal
+            {
+                CodigoCargaPersonal = ai_cod_car_personal,
+                seccion = as_seccion,
+                CodigoPersonal = cod_personal.CodigoPersonal,
+                CodPersonal = cod_personal,
+                CodigoSemestre = cod_semestre.CodigoSemestre,
+                CodSemestre = cod_semestre,
+                CodigoCiclo = cod_ciclo.CodigoCiclo,
+                CodCiclo = cod_ciclo,
+                CodigoCurso = cod_curso.CodigoCurso,
+                CodCurso = cod_curso                   
+            };
+        }
     }
 }
