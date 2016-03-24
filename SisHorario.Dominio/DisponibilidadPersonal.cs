@@ -21,5 +21,21 @@ namespace SisHorario.Dominio
         {
 
         }
+
+        public static DisponibilidadPersonal Registrar(int ai_cod_disp_personal, string as_dia, Personal cod_personal, Hora cod_hora, 
+            Semestre cod_semestre)
+        {
+            return new DisponibilidadPersonal()
+            {
+                CodigoDisponibilidadPersonal = ai_cod_disp_personal,
+                Dia = as_dia,
+                CodigoPersonal = cod_personal.CodigoPersonal,
+                CodPersonal = cod_personal,
+                CodigoHora = cod_hora.CodigoHora,
+                CodHora = cod_hora,
+                CodigoSemestre = cod_semestre.CodigoSemestre,
+                CodSemestre = cod_semestre
+            };
+        }
     }
 }
