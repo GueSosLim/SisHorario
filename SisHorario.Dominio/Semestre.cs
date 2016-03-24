@@ -19,12 +19,16 @@ namespace SisHorario.Dominio
 
         }
 
-        public static Semestre Registrar(int ai_cod_semestre, string as_nom_semestre, 
-            string as_anio_semestre, string as_est_semestre, )
+        public static Semestre Registrar(int ai_cod_semestre, string as_nom_semestre, string as_anio_semestre, PlanEstudio ao_planestudio)
         {
             return new Semestre()
             {
-
+                CodigoSemestre = ai_cod_semestre,
+                NombreSemestre = as_nom_semestre,
+                AnioSemestre = as_anio_semestre,
+                EstadoSemestre = "ACTIVO",
+                CodPlanEstudio = ao_planestudio,
+                CodigoPlanEstudio = ao_planestudio.CodigoPlanEstudio
             };
         }
     }
