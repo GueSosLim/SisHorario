@@ -12,22 +12,20 @@ namespace SisHorario.Dominio
         public string NombreAmbiente { get; private set; }
         public string TipoAmbiente { get; private set; }
         public int CapacidadAmbiente { get; private set; }
-        public string EstadoAmbiente { get; private set; }
 
         private Ambiente()
         {
 
         }
 
-        public static Ambiente Registrar(int ai_cod_ambiente, string as_nomb_ambiente, string as_tipo_ambiente, int ai_cap_ambiente, string as_est_ambiente)
+        public static Ambiente Registrar(int ai_cod_ambiente, string as_nomb_ambiente, string as_tipo_ambiente, int ai_cap_ambiente)
         {
             return new Ambiente()
             {
                 CodigoAmbiente = ai_cod_ambiente,
                 NombreAmbiente = as_nomb_ambiente,
                 TipoAmbiente = as_tipo_ambiente,
-                CapacidadAmbiente = ai_cap_ambiente,
-                EstadoAmbiente = as_est_ambiente
+                CapacidadAmbiente = ai_cap_ambiente
             };
         }
     }

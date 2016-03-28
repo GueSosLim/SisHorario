@@ -28,5 +28,28 @@ namespace SisHorario.Dominio
         {
 
         }
+
+        public static Horario Registrar(int ri_cod_horario, int ri_cant_alumnos, string rs_seccion, string rs_diahorario, string rs_horas, 
+            Personal ro_personal, Ciclo ro_ciclo, Semestre ro_semestre, Ambiente ro_ambiente, Curso ro_curso)
+        {
+            return new Horario()
+            {
+                CodigoHorario = ri_cod_horario,
+                CantidadAlumnos = ri_cant_alumnos,
+                Seccion = rs_seccion,
+                DiaHorario = rs_diahorario,
+                Horas = rs_horas,
+                CodPersonal = ro_personal,
+                CodigoPersonal = ro_personal.CodigoPersonal,
+                CodCiclo = ro_ciclo,
+                CodigoCiclo = ro_ciclo.CodigoCiclo,
+                CodSemestre = ro_semestre,
+                CodigoSemestre = ro_semestre.CodigoSemestre,
+                CodAmbiente = ro_ambiente,
+                CodigoAmbiente = ro_ambiente.CodigoAmbiente,
+                CodCurso = ro_curso,
+                CodigoCurso = ro_curso.CodigoCurso
+            };
+        }
     }
 }
