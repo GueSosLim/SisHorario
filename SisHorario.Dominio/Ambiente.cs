@@ -50,24 +50,20 @@ namespace SisHorario.Dominio
             };
         }
 
-        public static Ambiente ObtenerAmbienteCapac(int oaci_cod_ambiente, string oacs_nomb_ambiente, string oacs_tipo_ambiente, int oaci_cap_ambiente)
+        public static Ambiente ObtenerAmbienteCapac(int oaci_cod_ambiente,  int oaci_cap_ambiente)
         {
             return new Ambiente()
             {
                 CodigoAmbiente = oaci_cod_ambiente,
-                NombreAmbiente = oacs_nomb_ambiente,
-                TipoAmbiente = oacs_tipo_ambiente,
                 CapacidadAmbiente = oaci_cap_ambiente
             };
         }
-        public static Ambiente ObtenerAmbienteID(int oaii_cod_ambiente, string oais_nomb_ambiente, string oais_tipo_ambiente, int oaii_cap_ambiente)
+        public static Ambiente ObtenerAmbienteID(int oaii_cod_ambiente)
         {
             return new Ambiente()
             {
-                CodigoAmbiente = oaii_cod_ambiente,
-                NombreAmbiente = oais_nomb_ambiente,
-                TipoAmbiente = oais_tipo_ambiente,
-                CapacidadAmbiente = oaii_cap_ambiente
+                CodigoAmbiente = oaii_cod_ambiente
+              
             };
         }
     }
