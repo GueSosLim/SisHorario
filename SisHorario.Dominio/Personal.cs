@@ -44,5 +44,28 @@ namespace SisHorario.Dominio
                 CategoriaPersonal = as_cat_personal
             };
         }
+
+        public static Personal Actualizar()
+        {
+            return null;
+        }
+
+        public static Personal Desactivar()
+        {
+            return null;
+        }
+        public static Personal ObtenerPersonal()
+        {
+            return null;
+        }
+        public static Personal ObtenerPersonalDocente()
+        {
+            return null;
+        }
+        public static Personal ObtenerPersonalID()
+        {
+            return null;
+        }
+
     }
 }
