@@ -16,15 +16,42 @@ namespace SisHorario.Dominio
 
 
 
-        public static PlanEstudio Registrar(int ai_cod_planestudio, string as_nomb_planestudio, string as_desc_planestudio, string as_est_planestudio)
+        public static PlanEstudio Registrar(int ri_cod_planestudio, string rs_nomb_planestudio, string rs_desc_planestudio, string rs_est_planestudio)
+        {
+            return new PlanEstudio()
+            {
+                CodigoPlanEstudio = ri_cod_planestudio,
+                NombrePlanEstudio = rs_nomb_planestudio,
+                DescripcionPlanEstudio = rs_desc_planestudio,
+                EstadoPlanEstudio = rs_est_planestudio,
+                FechaCreacionPlanEstudio = DateTime.Now
+            };
+        }
+        public static PlanEstudio Actualizar(int ai_cod_planestudio, string as_nomb_planestudio, string as_desc_planestudio)
         {
             return new PlanEstudio()
             {
                 CodigoPlanEstudio = ai_cod_planestudio,
                 NombrePlanEstudio = as_nomb_planestudio,
                 DescripcionPlanEstudio = as_desc_planestudio,
-                EstadoPlanEstudio = as_est_planestudio,
+                EstadoPlanEstudio = "ACTIVO",
                 FechaCreacionPlanEstudio = DateTime.Now
+            };
+        }
+        public static PlanEstudio Desactivar(int di_cod_planestudio)
+        {
+            return new PlanEstudio()
+            {
+                CodigoPlanEstudio = di_cod_planestudio,
+                EstadoPlanEstudio = "INACTIVO"
+            };
+        }
+        public static PlanEstudio ObtenerPlan(int oi_cod_planestudio, string os_est_planestudio)
+        {
+            return new PlanEstudio()
+            {
+                CodigoPlanEstudio = oi_cod_planestudio,
+                EstadoPlanEstudio = os_est_planestudio
             };
         }
     }
