@@ -8,27 +8,19 @@ namespace SisHorario.Dominio
 {
     class Hora
     {
-        public int CodigoHora { get; private set; }
-        public DateTime InicioHora { get; private set; }
-        public DateTime FinHora { get; private set; }
-        public int CodigoSemestre { get; private set; }
-        public virtual Semestre CodSemestre { get; private set; }
+        public int id_hora { get; private set; }
+        public string desc_hora { get; private set; }
 
         private Hora()
         {
 
         }
 
-        public static Hora Registrar(int ai_cod_hora, DateTime adt_ini_hora, DateTime adt_fin_hora, Semestre ao_semestre)
+        public static Hora ObtenerHora()
         {
             return new Hora()
             {
-                CodigoHora = ai_cod_hora,
-                InicioHora = adt_ini_hora,
-                FinHora = adt_fin_hora,
-                CodSemestre = ao_semestre,
-                CodigoSemestre = ao_semestre.CodigoSemestre
-                
+
             };
         }
     }
