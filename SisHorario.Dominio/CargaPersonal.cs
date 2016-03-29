@@ -40,5 +40,23 @@ namespace SisHorario.Dominio
                 CodCurso = cod_curso                   
             };
         }
+
+        public static CargaPersonal Actualizar() {
+            return null;
+        }
+
+        public static CargaPersonal Eliminar()
+        {
+            return null;
+        }
+
+        public static CargaPersonal ObtenerCargaPersonal()
+        {
+            return null;
+        }
+        public static CargaPersonal ObtenerCargaPersonalCurso()
+        {
+            return null;
+        }
     }
 }
