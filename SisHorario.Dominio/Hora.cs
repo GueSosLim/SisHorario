@@ -8,8 +8,8 @@ namespace SisHorario.Dominio
 {
     class Hora
     {
-        public int id_hora { get; private set; }
-        public string desc_hora { get; private set; }
+        public int CodigoHora { get; private set; }
+        public string DescripcionHora { get; private set; }
 
         private Hora()
         {
@@ -18,10 +18,7 @@ namespace SisHorario.Dominio
 
         public static Hora ObtenerHora()
         {
-            return new Hora()
-            {
-
-            };
+            return null;
         }
     }
 }
