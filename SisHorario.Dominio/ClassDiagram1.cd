@@ -2,15 +2,21 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SisHorario.Dominio.Ambiente">
     <Position X="2.5" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Ambiente" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AABAAAAAAAAAAABAACAAAQAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>QABAAAAAAAAAAABAACAAAAAAAAAAAAAIAAAABAAACAQ=</HashCode>
       <FileName>Ambiente.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SisHorario.Dominio.CargaPersonal">
     <Position X="6" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="CargaPersonal" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AQAAAAICAAAAAAABAAAAAAAAAAAEAAAAIEAAEEIAAAA=</HashCode>
+      <HashCode>AQAAAAICEBQAAAABAAAAAAAAAAAEAAAIIEAAEEIAAAQ=</HashCode>
       <FileName>CargaPersonal.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -21,15 +27,21 @@
   </Class>
   <Class Name="SisHorario.Dominio.Ciclo">
     <Position X="8.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Ciclo" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAACABAAAAAAAAAAEAIAAAAAAAAIAAAAAAAAAAQ=</HashCode>
       <FileName>Ciclo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SisHorario.Dominio.Curso">
     <Position X="10.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Curso" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>IAAAAAQCIAAAAAEAIAAQAAAAAEAECAAAKEAAAUAAAAA=</HashCode>
+      <HashCode>IAAAAAQCIAAAAAEAIAAQAAAAAEAECAAAKEAAAUAAAAQ=</HashCode>
       <FileName>Curso.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -39,8 +51,11 @@
   </Class>
   <Class Name="SisHorario.Dominio.DisponibilidadPersonal">
     <Position X="0.5" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="DisponibilidadPersonal" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AQAAAAIAAAAAAAEhAAAAAAAAAAAAAAAAAIAAEAIAAAA=</HashCode>
+      <HashCode>AQAAAAIAAAAAAAEhAAAAAAAAAAAAAAAAAIAAEAIAAAQ=</HashCode>
       <FileName>DisponibilidadPersonal.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -51,15 +66,21 @@
   </Class>
   <Class Name="SisHorario.Dominio.Hora">
     <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Hora" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAIIAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAIAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAkAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hora.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SisHorario.Dominio.Horario">
     <Position X="5.5" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="Horario" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AQAAAAoCAAEAAIAAACAAABAAAAAAAAEAIEAAEMIAAAA=</HashCode>
+      <HashCode>AQAAAAoCAAEAAIAAACAAABAAAAAAAAEAIEAAEMIAAAQ=</HashCode>
       <FileName>Horario.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -73,21 +94,24 @@
   <Class Name="SisHorario.Dominio.Personal">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAACAAQAgQIAAAAAgAAEgAAACAAAAEAAAAAU=</HashCode>
+      <HashCode>AAAAAAQDAACAAQAgQIAAEAAgAAEgAAAKAAAAEAAAAAU=</HashCode>
       <FileName>Personal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SisHorario.Dominio.PlanEstudio">
     <Position X="10.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAACAAAAAAAAAACAAAAAAAAAAAEAQAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AgAACAAAAgAAAAACAAAAEAAAAAAEAQAIAAAAAAAAAAQ=</HashCode>
       <FileName>PlanEstudio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SisHorario.Dominio.Semestre">
     <Position X="7.25" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="Semestre" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAABYAQAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>IAAAABYAQAAAAAAAAAAAEAAAAAAMAAAIAAAAAAAAAAQ=</HashCode>
       <FileName>Semestre.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
