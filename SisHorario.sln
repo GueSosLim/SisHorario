@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisHorario.Dominio", "SisHo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisHorario.Pruebas", "SisHorario.Pruebas\SisHorario.Pruebas.csproj", "{3346CD69-56C2-43DB-A631-77EFDE2B1EA3}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SisHorario.Modelado", "SisHorario.Arquitectura\SisHorario.Modelado.modelproj", "{E7A168CF-3AC5-498E-B375-446631DAB6B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisHorario.Arquitectura", "SisHorario.Arquitecturas\SisHorario.Arquitectura.csproj", "{2CDE1D1A-976E-4B3F-92E1-3CC166883CA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisHorario.Arquitecturas", "SisHorario.Arquitecturas\SisHorario.Arquitecturas.csproj", "{2CDE1D1A-976E-4B3F-92E1-3CC166883CA3}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SisHorario.Modelado", "SisHorario.Modelado\SisHorario.Modelado.modelproj", "{E2341632-CFD6-4192-A620-C5A6023CB167}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{3346CD69-56C2-43DB-A631-77EFDE2B1EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3346CD69-56C2-43DB-A631-77EFDE2B1EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3346CD69-56C2-43DB-A631-77EFDE2B1EA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7A168CF-3AC5-498E-B375-446631DAB6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7A168CF-3AC5-498E-B375-446631DAB6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7A168CF-3AC5-498E-B375-446631DAB6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7A168CF-3AC5-498E-B375-446631DAB6B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2CDE1D1A-976E-4B3F-92E1-3CC166883CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2CDE1D1A-976E-4B3F-92E1-3CC166883CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CDE1D1A-976E-4B3F-92E1-3CC166883CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CDE1D1A-976E-4B3F-92E1-3CC166883CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2341632-CFD6-4192-A620-C5A6023CB167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2341632-CFD6-4192-A620-C5A6023CB167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2341632-CFD6-4192-A620-C5A6023CB167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2341632-CFD6-4192-A620-C5A6023CB167}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

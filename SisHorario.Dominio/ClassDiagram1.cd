@@ -93,6 +93,9 @@
   </Class>
   <Class Name="SisHorario.Dominio.Personal">
     <Position X="2.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Personal" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAAAAAQDAACAAQAgQIAAEAAgAAEgAAAKAAAAEAAAAAU=</HashCode>
       <FileName>Personal.cs</FileName>
