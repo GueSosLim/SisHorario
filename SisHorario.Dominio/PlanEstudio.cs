@@ -14,7 +14,10 @@ namespace SisHorario.Dominio
         public string EstadoPlanEstudio { get; private set; }
         public DateTime FechaCreacionPlanEstudio { get; private set; }
 
+        public PlanEstudio()
+        {
 
+        }
 
         public static PlanEstudio Registrar(int ri_cod_planestudio, string rs_nomb_planestudio, string rs_desc_planestudio, string rs_est_planestudio)
         {

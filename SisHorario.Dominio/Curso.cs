@@ -24,9 +24,9 @@ namespace SisHorario.Dominio
         public int CodigoCiclo { get; private set; }
         public virtual Ciclo CodCiclo { get; private set; }
 
-        private Curso()
+        public Curso()
         {
-
+            
         }
 
         public static Curso Registrar(int ri_cod_curso, string rs_cod_d_curso, string rs_nom_curso, 
@@ -52,5 +52,31 @@ namespace SisHorario.Dominio
                 CodigoCiclo = ro_ciclo.CodigoCiclo  
             };
         }
+
+        public static Curso Actualizar(int ai_cod_curso, string as_cod_d_curso, string as_nom_curso,
+            int ai_hora_teoria_curso, int ai_hora_prac_curso, int ai_tothor_curso, int ai_cred_curso, string as_prereq_curso,
+            string as_tipo_curso, DateTime adt_feccre_curso, string as_color_curso, PlanEstudio ao_planestudio, Ciclo ao_ciclo)
+        {
+            return new Curso()
+            {
+                CodigoCurso = ai_cod_curso,
+                CodigoDelCurso = as_cod_d_curso,
+                NombreCurso = as_nom_curso,
+                HoraTeoria = ai_hora_teoria_curso,
+                HoraPractica = ai_hora_prac_curso,
+                TotalHoras = ai_tothor_curso,
+                CreditoCurso = ai_cred_curso,
+                PreRequisitoCurso = as_prereq_curso,
+                TipoCurso = as_tipo_curso,
+                FechaCreacion = adt_feccre_curso,
+                ColorCurso = as_color_curso,
+                CodPlanEstudio = ao_planestudio,
+                CodigoPlanEstudio = ao_planestudio.CodigoPlanEstudio,
+                CodCiclo = ao_ciclo,
+                CodigoCiclo = ao_ciclo.CodigoCiclo
+            };
+        }
+
+
     }
 }

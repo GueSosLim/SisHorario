@@ -22,7 +22,23 @@ namespace SisHorario.Dominio
 
         }
 
-        public static DisponibilidadPersonal Registrar(int ai_cod_disp_personal, string as_dia, Personal cod_personal, Hora cod_hora, 
+        public static DisponibilidadPersonal Registrar(int ri_cod_disp_personal, string rs_dia, Personal cod_personal, Hora cod_hora, 
+            Semestre cod_semestre)
+        {
+            return new DisponibilidadPersonal()
+            {
+                CodigoDisponibilidadPersonal = ri_cod_disp_personal,
+                Dia = rs_dia,
+                CodigoPersonal = cod_personal.CodigoPersonal,
+                CodPersonal = cod_personal,
+                CodigoHora = cod_hora.CodigoHora,
+                CodHora = cod_hora,
+                CodigoSemestre = cod_semestre.CodigoSemestre,
+                CodSemestre = cod_semestre
+            };
+        }
+
+        public static DisponibilidadPersonal Actualizar(int ai_cod_disp_personal, string as_dia, Personal cod_personal, Hora cod_hora,
             Semestre cod_semestre)
         {
             return new DisponibilidadPersonal()
@@ -35,6 +51,14 @@ namespace SisHorario.Dominio
                 CodHora = cod_hora,
                 CodigoSemestre = cod_semestre.CodigoSemestre,
                 CodSemestre = cod_semestre
+            };
+        }
+
+        public static DisponibilidadPersonal Eliminar(int ei_cod_disp_personal)
+        {
+            return new DisponibilidadPersonal()
+            {
+                CodigoDisponibilidadPersonal = ei_cod_disp_personal
             };
         }
     }
