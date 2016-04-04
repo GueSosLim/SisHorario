@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SisHorario.Dominio
 {
-    class Ambiente
+    public class Ambiente
     {
         public int CodigoAmbiente { get; private set; }
         public string NombreAmbiente { get; private set; }
