@@ -47,6 +47,7 @@ namespace SisHorario.Dominio
             NombreCiclo = as_nomb_ciclo;
         }
 
+
         //public static Ciclo ObtenerCiclo(int ai_cod_ciclo)
         //{
         //    return new Ciclo()
