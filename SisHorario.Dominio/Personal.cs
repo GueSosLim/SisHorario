@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SisHorario.Dominio
 {
+    /// <summary>
+    /// Clase de dominio Personal
+    /// </summary>
     public class Personal
     {
         public int CodigoPersonal { get; private set; }

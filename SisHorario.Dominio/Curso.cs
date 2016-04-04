@@ -6,29 +6,88 @@ using System.Threading.Tasks;
 
 namespace SisHorario.Dominio
 {
+    /// <summary>
+    /// Clase de dominio Cuso
+    /// </summary>
     public class Curso
     {
+        /// <summary>
+        /// Código del Curso
+        /// </summary>
         public int CodigoCurso { get; private set; }
+        /// <summary>
+        /// Código asignado al curso
+        /// </summary>
         public string CodigoDelCurso { get; private set; }
+        /// <summary>
+        /// Nombre del Curso
+        /// </summary>
         public string NombreCurso { get; private set; }
+        /// <summary>
+        /// Horas de teoría asignadas al curso
+        /// </summary>
         public int HoraTeoria { get; private set; }
+        /// <summary>
+        /// Horas de práctica asignadas al curso
+        /// </summary>
         public int HoraPractica { get; private set; }
+        /// <summary>
+        /// Total de Horas asignadas al curso
+        /// </summary>
         public int TotalHoras { get; private set; }
+        /// <summary>
+        /// Créditos asignados al curso
+        /// </summary>
         public int CreditoCurso { get; private set; }
+        /// <summary>
+        /// Pre requisitos para llevar el curso
+        /// </summary>
         public string PreRequisitoCurso { get; private set; }
+        /// <summary>
+        /// Tipo de curso (Obligatorio, Electivo)
+        /// </summary>
         public string TipoCurso { get; private set; }
+        /// <summary>
+        /// Fecha de creación del curso
+        /// </summary>
         public DateTime FechaCreacion { get; private set; }
+        /// <summary>
+        /// Color asignado al curso
+        /// </summary>
         public string ColorCurso { get; private set; }
+        /// <summary>
+        /// Código Plan de Estudio
+        /// </summary>
         public int CodigoPlanEstudio { get; private set; }
         public virtual PlanEstudio CodPlanEstudio { get; private set; }
+        /// <summary>
+        /// Código de Ciclo
+        /// </summary>
         public int CodigoCiclo { get; private set; }
         public virtual Ciclo CodCiclo { get; private set; }
-
+        /// <summary>
+        /// Constructor de la clase Curso
+        /// </summary>
         public Curso()
         {
             
         }
-
+        /// <summary>
+        /// Método que crea una nueva instancia de la clase Curso
+        /// </summary>
+        /// <param name="ri_cod_curso">Código del Curso</param>
+        /// <param name="rs_cod_d_curso">Código asignado al curso</param>
+        /// <param name="rs_nom_curso">Nombre del Curso</param>
+        /// <param name="ri_hora_teoria_curso">Horas teoría</param>
+        /// <param name="ri_hora_prac_curso">Horas práctica</param>
+        /// <param name="ri_tothor_curso">Total horas</param>
+        /// <param name="ri_cred_curso">Creditos del curso</param>
+        /// <param name="rs_prereq_curso">Pre requisitos del curso</param>
+        /// <param name="rs_tipo_curso">Tipo de curso</param>
+        /// <param name="rs_color_curso">Color del curso</param>
+        /// <param name="ro_planestudio">Código Plan de Estudio</param>
+        /// <param name="ro_ciclo">Código del Ciclo</param>
+        /// <returns></returns>
         public static Curso Registrar(int ri_cod_curso, string rs_cod_d_curso, string rs_nom_curso, 
             int ri_hora_teoria_curso, int ri_hora_prac_curso, int ri_tothor_curso, int ri_cred_curso, string rs_prereq_curso, 
             string rs_tipo_curso, string rs_color_curso, PlanEstudio ro_planestudio, Ciclo ro_ciclo)
