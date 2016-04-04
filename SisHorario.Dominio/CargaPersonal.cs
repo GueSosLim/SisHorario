@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SisHorario.Dominio
 {
-    class CargaPersonal
+    public class CargaPersonal
     {
         public int CodigoCargaPersonal { get; private set; }
         public string seccion { get; private set; }
