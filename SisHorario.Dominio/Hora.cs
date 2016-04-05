@@ -15,10 +15,5 @@ namespace SisHorario.Dominio
         {
 
         }
-
-        public static Hora ObtenerHora()
-        {
-            return null;
-        }
     }
 }

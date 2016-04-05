@@ -57,18 +57,6 @@ namespace SisHorario.Dominio
         {
             return null;
         }
-        public static Personal ObtenerPersonal()
-        {
-            return null;
-        }
-        public static Personal ObtenerPersonalDocente()
-        {
-            return null;
-        }
-        public static Personal ObtenerPersonalID()
-        {
-            return null;
-        }
 
     }
 }
