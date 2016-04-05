@@ -22,6 +22,7 @@ namespace SisHorario.Dominio
         /// <summary>
         /// Constructor de la clase Ciclo
         /// </summary>
+        public ICollection<Curso> Cursos { get; set; }
         private Ciclo()
         {
 

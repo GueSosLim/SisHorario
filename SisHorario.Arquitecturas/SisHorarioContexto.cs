@@ -33,6 +33,7 @@ namespace SisHorario.Infraestructura
             modelBuilder.Entity<CargaPersonal>().HasKey(k => k.CodigoCargaPersonal);
             modelBuilder.Entity<Ciclo>().HasKey(k => k.CodigoCiclo);
             modelBuilder.Entity<Curso>().HasKey(k => k.CodigoCurso);
+            modelBuilder.Entity<Curso>().HasRequired(p => p.CodCiclo).WithMany(p=>p.Cursos).HasForeignKey(f => f.CodigoCiclo);
             modelBuilder.Entity<DisponibilidadPersonal>().HasKey(k => k.CodigoDisponibilidadPersonal);
             modelBuilder.Entity<Hora>().HasKey(k => k.CodigoHora);
             modelBuilder.Entity<Horario>().HasKey(k => k.CodigoHorario);
