@@ -63,9 +63,6 @@
   <ItemGroup>
     <Compile Include="PruebaUnitariaAmbiente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PruebasIntegralesAmbiente.cs" />
-    <Compile Include="PruebaUnitariaCiclo.cs" />
-    <Compile Include="PruebasIntegralesCiclo.cs" />
     <Compile Include="PruebaUnitariaPlanEstudio.cs" />
     <Compile Include="PruebaUnitariaPersonal.cs" />
     <Compile Include="PruebaUnitariaHora.cs" />

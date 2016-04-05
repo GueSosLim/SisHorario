@@ -82,14 +82,5 @@ namespace SisHorario.Dominio
         {
             return null;
         }
-
-        public static CargaPersonal ObtenerCargaPersonal()
-        {
-            return null;
-        }
-        public static CargaPersonal ObtenerCargaPersonalCurso()
-        {
-            return null;
-        }
     }
 }
