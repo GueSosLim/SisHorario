@@ -65,29 +65,33 @@ namespace SisHorario.Dominio
                 CodSemestre = cod_semestre
             };
         }
-
-        public static DisponibilidadPersonal Actualizar(int ai_cod_disp_personal, string as_dia, Personal cod_personal, Hora cod_hora,
+        /// <summary>
+        /// Metodo para actualizar la instancia de la clase Disponibilidad Personal
+        /// </summary>
+        /// <param name="ai_cod_disp_personal"></param>
+        /// <param name="as_dia"></param>
+        /// <param name="cod_personal"></param>
+        /// <param name="cod_hora"></param>
+        /// <param name="cod_semestre"></param>
+        public void Actualizar(int ai_cod_disp_personal, string as_dia, Personal cod_personal, Hora cod_hora,
             Semestre cod_semestre)
         {
-            return new DisponibilidadPersonal()
-            {
-                CodigoDisponibilidadPersonal = ai_cod_disp_personal,
-                Dia = as_dia,
-                CodigoPersonal = cod_personal.CodigoPersonal,
-                CodPersonal = cod_personal,
-                CodigoHora = cod_hora.CodigoHora,
-                CodHora = cod_hora,
-                CodigoSemestre = cod_semestre.CodigoSemestre,
-                CodSemestre = cod_semestre
-            };
+            CodigoDisponibilidadPersonal = ai_cod_disp_personal;
+            Dia = as_dia;
+            CodigoPersonal = cod_personal.CodigoPersonal;
+            CodPersonal = cod_personal;
+            CodigoHora = cod_hora.CodigoHora;
+            CodHora = cod_hora;
+            CodigoSemestre = cod_semestre.CodigoSemestre;
+            CodSemestre = cod_semestre;
         }
-
-        public static DisponibilidadPersonal Eliminar(int ei_cod_disp_personal)
+        /// <summary>
+        /// Metodo para Eliminar La disponibilidad del personal
+        /// </summary>
+        /// <param name="ei_cod_disp_personal"></param>
+        public void Eliminar(int ei_cod_disp_personal)
         {
-            return new DisponibilidadPersonal()
-            {
-                CodigoDisponibilidadPersonal = ei_cod_disp_personal
-            };
+            CodigoDisponibilidadPersonal = ei_cod_disp_personal;
         }
     }
 }
