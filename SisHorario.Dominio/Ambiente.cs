@@ -54,15 +54,20 @@ namespace SisHorario.Dominio
                 CapacidadAmbiente = ri_cap_ambiente
             };
         }
-        public static Ambiente Actualizar(int ri_cod_ambiente, string rs_nomb_ambiente, string rs_tipo_ambiente, int ri_cap_ambiente)
+
+        /// <summary>
+        /// Actualizar datos del Ambiente
+        /// </summary>
+        /// <param name="ai_cod_ambiente">Código del Ambiente</param>
+        /// <param name="as_nomb_ambiente">Nombre del Ambiente</param>
+        /// <param name="as_tipo_ambiente">Tipo del Ambiente</param>
+        /// <param name="ai_cap_ambiente">Capacidad del Ambiente</param>
+        public void Actualizar(int ai_cod_ambiente, string as_nomb_ambiente, string as_tipo_ambiente, int ai_cap_ambiente)
         {
-            return new Ambiente()
-            {
-                CodigoAmbiente = ri_cod_ambiente,
-                NombreAmbiente = rs_nomb_ambiente,
-                TipoAmbiente = rs_tipo_ambiente,
-                CapacidadAmbiente = ri_cap_ambiente
-            };
+            CodigoAmbiente = ai_cod_ambiente;
+            NombreAmbiente = as_nomb_ambiente;
+            TipoAmbiente = as_tipo_ambiente;
+            CapacidadAmbiente = ai_cap_ambiente;
         }
     }
 }
