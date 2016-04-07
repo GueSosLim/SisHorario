@@ -10,9 +10,14 @@ namespace SisHorario.Pruebas
         [TestMethod]
         public void HorarioCreadoSatisfactoriamente()
         {
-            //var lo_horario = Horario.Registrar(1, 30, "A", "Lunes", "2", 1, 1, 1, 1, 1);
-            //Assert.IsNotNull(lo_horario);
-            //Assert.IsTrue(lo_horario.CodigoHorario == 1);
+            var lo_personal = Personal.Registrar(1, "Elard", "Rodríguez Marca", "Docente", "elard@hotmail.com", "Bolognesi 142", "406348", "952736484", "", "ACTIVO", "Contratado", "A");
+            var lo_ciclo = Personal.Registrar();
+            var lo_semestre = Personal.Registrar();
+            var lo_personal = Personal.Registrar();
+            var lo_personal = Personal.Registrar();
+            var lo_horario = Horario.Registrar(1, 30, "A", "Lunes", "2", lo_personal, 1, 1, 1, 1);
+            Assert.IsNotNull(lo_horario);
+            Assert.IsTrue(lo_horario.CodigoHorario == 1);
         }
     }
 }
