@@ -40,20 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ambiente.cs" />
-    <Compile Include="CargaPersonal.cs" />
-    <Compile Include="Ciclo.cs" />
-    <Compile Include="Curso.cs" />
-    <Compile Include="DisponibilidadPersonal.cs" />
-    <Compile Include="Hora.cs" />
-    <Compile Include="Horario.cs" />
-    <Compile Include="Personal.cs" />
-    <Compile Include="PlanEstudio.cs" />
-    <Compile Include="Semestre.cs" />
+    <Compile Include="Entidades\Ambiente.cs" />
+    <Compile Include="Entidades\CargaPersonal.cs" />
+    <Compile Include="Entidades\Ciclo.cs" />
+    <Compile Include="Entidades\Curso.cs" />
+    <Compile Include="Entidades\DisponibilidadPersonal.cs" />
+    <Compile Include="Entidades\Hora.cs" />
+    <Compile Include="Entidades\Horario.cs" />
+    <Compile Include="Repositorios\IRepositorio.cs" />
+    <Compile Include="Repositorios\IRepositorioLectura.cs" />
+    <Compile Include="Entidades\Personal.cs" />
+    <Compile Include="Entidades\PlanEstudio.cs" />
+    <Compile Include="Entidades\Semestre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="Diagramas\DiagramaDeClases.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
