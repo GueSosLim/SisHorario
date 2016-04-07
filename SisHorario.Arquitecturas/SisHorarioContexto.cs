@@ -5,6 +5,7 @@ using SisHorario.Dominio;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SisHorario.Arquitecturas.Mapeos;
 
 namespace SisHorario.Infraestructura
 {
@@ -26,20 +27,21 @@ namespace SisHorario.Infraestructura
         public DbSet<PlanEstudio> PlanEstudios { get; set; }
         public DbSet<Semestre> Semestres { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        protected override void OnModelCreating(DbModelBuilder modelBuilder) /*ff*/
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Ambiente>().HasKey(k => k.CodigoAmbiente);
+            modelBuilder.Configurations.Add(new CicloMapeo());
+            /*modelBuilder.Entity<Ambiente>().HasKey(k => k.CodigoAmbiente);
             modelBuilder.Entity<CargaPersonal>().HasKey(k => k.CodigoCargaPersonal);
             modelBuilder.Entity<Ciclo>().HasKey(k => k.CodigoCiclo);
             modelBuilder.Entity<Curso>().HasKey(k => k.CodigoCurso);
-            modelBuilder.Entity<Curso>().HasRequired(p => p.CodCiclo).WithMany(p=>p.Cursos).HasForeignKey(f => f.CodigoCiclo);
+            //modelBuilder.Entity<Curso>().HasRequired(p => p.CodCiclo).WithMany(p=>p.Cursos).HasForeignKey(f => f.CodigoCiclo);
             modelBuilder.Entity<DisponibilidadPersonal>().HasKey(k => k.CodigoDisponibilidadPersonal);
             modelBuilder.Entity<Hora>().HasKey(k => k.CodigoHora);
             modelBuilder.Entity<Horario>().HasKey(k => k.CodigoHorario);
             modelBuilder.Entity<Personal>().HasKey(k => k.CodigoPersonal);
             modelBuilder.Entity<PlanEstudio>().HasKey(k => k.CodigoPlanEstudio);
-            modelBuilder.Entity<Semestre>().HasKey(k => k.CodigoSemestre);
+            modelBuilder.Entity<Semestre>().HasKey(k => k.CodigoSemestre);*/
         }
     }
 }
