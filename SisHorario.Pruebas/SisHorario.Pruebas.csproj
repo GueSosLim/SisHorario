@@ -72,6 +72,7 @@
     <Compile Include="PruebaUnitariaHorario.cs" />
     <Compile Include="PruebaUnitariaCurso.cs" />
     <Compile Include="PruebasIntegralesAmbiente.cs" />
+    <Compile Include="PruebaUnitariaCiclo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SisHorario.Arquitecturas\SisHorario.Infraestructura.csproj">

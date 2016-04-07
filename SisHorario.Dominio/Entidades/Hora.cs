@@ -15,5 +15,14 @@ namespace SisHorario.Dominio
         {
 
         }
+
+        public static Hora Registrar(int ri_cod_hora, string rs_des_hora)
+        {
+            return new Hora()
+            {
+                CodigoHora = ri_cod_hora,
+                DescripcionHora = rs_des_hora
+            };
+        }
     }
 }
