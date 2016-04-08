@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SisHorario.Dominio
 {
-    interface IRepositorio<T> : IRepositorioLectura<T>
+    public interface IRepositorio<T> : IRepositorioLectura<T>
     {
         bool Adicionar(T ao_entidad);
         bool Actualizar(T ao_entidad);

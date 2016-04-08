@@ -49,10 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InicializadorDB.cs" />
+    <Compile Include="Contextos\ContextoBase.cs" />
+    <Compile Include="Contextos\InicializadorDB.cs" />
     <Compile Include="Mapeos\CicloMapeo.cs" />
-    <Compile Include="SisHorarioContexto.cs" />
+    <Compile Include="Repositorios\RepositorioGenerico.cs" />
+    <Compile Include="Contextos\SisHorarioContexto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\RepositorioLectura.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SisHorario.Dominio\SisHorario.Dominio.csproj">

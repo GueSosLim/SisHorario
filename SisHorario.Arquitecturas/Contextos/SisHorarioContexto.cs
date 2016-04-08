@@ -11,7 +11,7 @@ namespace SisHorario.Infraestructura
 {
     public class SisHorarioContexto : DbContext
     {
-        public SisHorarioContexto() : base("Conexion")
+        public SisHorarioContexto(string as_conexion) : base("Conexion")
         {
             Database.SetInitializer<SisHorarioContexto>(new InicializadorDB());
         }

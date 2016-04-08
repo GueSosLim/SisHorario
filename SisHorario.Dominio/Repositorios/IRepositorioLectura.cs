@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SisHorario.Dominio
 {
-    interface IRepositorioLectura<T>
+    public interface IRepositorioLectura<T>
     {
         T ObtenerPorCodigo(params object[] ao_llaves);
         IQueryable<T> Listar();
