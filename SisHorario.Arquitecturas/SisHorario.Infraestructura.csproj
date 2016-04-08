@@ -51,7 +51,16 @@
   <ItemGroup>
     <Compile Include="Contextos\ContextoBase.cs" />
     <Compile Include="Contextos\InicializadorDB.cs" />
+    <Compile Include="Mapeos\AmbienteMapeo.cs" />
+    <Compile Include="Mapeos\CargaPersonalMapeo.cs" />
     <Compile Include="Mapeos\CicloMapeo.cs" />
+    <Compile Include="Mapeos\CursoMapeo.cs" />
+    <Compile Include="Mapeos\DisponibilidadPersonalMapeo.cs" />
+    <Compile Include="Mapeos\HoraMapeo.cs" />
+    <Compile Include="Mapeos\HorarioMapeo.cs" />
+    <Compile Include="Mapeos\PersonalMapeo.cs" />
+    <Compile Include="Mapeos\PlanEstudioMapeo.cs" />
+    <Compile Include="Mapeos\SemestreMapeo.cs" />
     <Compile Include="Repositorios\RepositorioGenerico.cs" />
     <Compile Include="Contextos\SisHorarioContexto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
