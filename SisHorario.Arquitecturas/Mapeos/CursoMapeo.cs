@@ -15,7 +15,7 @@ namespace SisHorario.Arquitecturas.Mapeos
         {
             ToTable("CURSO");
             HasKey(k => k.CodigoCurso);
-            Property(p => p.CoCodigoCurso).HasColumnName("COD_CURSO").IsRequired();
+            Property(p => p.CodigoCurso).HasColumnName("COD_CURSO").IsRequired();
             Property(p => p.CodigoCiclo).HasColumnName("COD_CICLO").IsRequired();
             Property(p => p.CodigoDelCurso).HasColumnName("COD_DCURSO").IsRequired();
             Property(p => p.CodigoPlanEstudio).HasColumnName("COD_PLANESTUDIOS").IsRequired();
