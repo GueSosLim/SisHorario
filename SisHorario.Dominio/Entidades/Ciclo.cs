@@ -47,22 +47,5 @@ namespace SisHorario.Dominio
             CodigoCiclo = ai_cod_ciclo;
             NombreCiclo = as_nomb_ciclo;
         }
-
-
-        //public static Ciclo ObtenerCiclo(int ai_cod_ciclo)
-        //{
-        //    return new Ciclo()
-        //    {
-        //        CodigoCiclo = ai_cod_ciclo
-        //    };
-        //}
-
-        //public static Ciclo ObtenerCicloId(string as_nomb_ciclo)
-        //{
-        //    return new Ciclo()
-        //    {
-        //        NombreCiclo = as_nomb_ciclo
-        //    };
-        //}
     }
 }

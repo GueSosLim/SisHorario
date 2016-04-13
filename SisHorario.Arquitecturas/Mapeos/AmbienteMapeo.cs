@@ -5,10 +5,11 @@ using SisHorario.Dominio;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 
 namespace SisHorario.Arquitecturas.Mapeos
 {
-    class AmbienteMapeo : EntityTypeConfiguration<Ambiente>
+    public class AmbienteMapeo : EntityTypeConfiguration<Ambiente>
     {
         public AmbienteMapeo()
         {

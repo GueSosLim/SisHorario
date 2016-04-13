@@ -17,10 +17,8 @@
     </Members>
     <AssociationLine Name="CodSemestre" Type="SisHorario.Dominio.Semestre" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7.5" Y="2.952" />
-        <Point X="8.635" Y="2.952" Type="JumpStart" />
-        <Point X="8.802" Y="2.952" Type="JumpEnd" />
-        <Point X="9.375" Y="2.952" />
+        <Point X="7.5" Y="2.789" />
+        <Point X="9.375" Y="2.789" />
         <Point X="9.375" Y="5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -35,10 +33,11 @@
       <Property Name="CodPersonal" />
       <Property Name="CodSemestre" />
       <Property Name="CodCiclo" />
+      <Property Name="CodCurso" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SisHorario.Dominio.Ciclo">
-    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="0.5" Width="1.5" />
     <Members>
       <Method Name="Ciclo" Hidden="true" />
     </Members>
@@ -101,8 +100,10 @@
     <AssociationLine Name="CodCiclo" Type="SisHorario.Dominio.Ciclo" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="7.5" Y="3.938" />
-        <Point X="8.719" Y="3.938" />
-        <Point X="8.719" Y="2.44" />
+        <Point X="9.292" Y="3.938" Type="JumpStart" />
+        <Point X="9.458" Y="3.938" Type="JumpEnd" />
+        <Point X="9.719" Y="3.938" />
+        <Point X="9.719" Y="2.44" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SisHorario.Arquitecturas.Mapeos
 {
-    class PersonalMapeo : EntityTypeConfiguration<Personal>
+    public class PersonalMapeo : EntityTypeConfiguration<Personal>
     {
         public PersonalMapeo()
         {

@@ -97,11 +97,5 @@ namespace SisHorario.Dominio
             CodigoCurso = cod_curso.CodigoCurso;
             CodCurso = cod_curso;
         }
-
-
-        //public void Eliminar(int ei_cod_car_personal)
-        //{ 
-            
-        //}
     }
 }

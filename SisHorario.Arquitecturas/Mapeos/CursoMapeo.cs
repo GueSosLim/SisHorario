@@ -9,7 +9,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace SisHorario.Arquitecturas.Mapeos
 {
-    class CursoMapeo : EntityTypeConfiguration<Curso>
+    public class CursoMapeo : EntityTypeConfiguration<Curso>
     {
         public CursoMapeo()
         {
@@ -23,11 +23,13 @@ namespace SisHorario.Arquitecturas.Mapeos
             Property(p => p.CreditoCurso).HasColumnName("CRED_CURSO").IsRequired();
             Property(p => p.FechaCreacion).HasColumnName("FEC_CREACION").IsRequired();
             Property(p => p.HoraPractica).HasColumnName("HORA_PRACTICA").IsRequired();
-            Property(p => p.HoraTeorica).HasColumnName("HORA_TEORICA").IsRequired();
+            Property(p => p.HoraTeoria).HasColumnName("HORA_TEORIA").IsRequired();
             Property(p => p.NombreCurso).HasColumnName("NOM_CURSO").IsRequired();
             Property(p => p.PreRequisitoCurso).HasColumnName("PREREQ_CURSO").IsRequired();
             Property(p => p.TipoCurso).HasColumnName("TIPO_CURSO").IsRequired();
             Property(p => p.TotalHoras).HasColumnName("TOT_HORAS").IsRequired();
+            HasRequired(m => m.CodCiclo).WithMany().HasForeignKey(m => m.CodigoCiclo);
+            HasRequired(m => m.CodPlanEstudio).WithMany().HasForeignKey(m => m.CodigoPlanEstudio);
         }
     }
 }
