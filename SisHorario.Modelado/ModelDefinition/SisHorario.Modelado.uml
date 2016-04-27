@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="57d3edac-b511-4bda-bf78-6bbe00b27351"
   name="SisHorario.Modelado" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,1116 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="9a42e6f4-d9e1-4584-8f46-9c6e5a7b3f02"
+        name="Administrador"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="47b837d0-f0d8-4423-beb2-d5d6b5cf824b"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Ingresar al Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5eb73ed2-663f-4d27-a8a1-a57ffdc6a302"
+              LastKnownName="Ingresar al Sistema"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70f9bf14-1dd3-4092-8f6c-ec4c68078fdb"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42c66b55-4fe5-4f14-86af-db6746f0a381"
+                  name="Ingresar al Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f51f2ebb-0579-4b1b-ad28-b108a4b200ea"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Ingresar al Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="299f570a-aa2d-4265-9124-b9326ab122fb"
+              LastKnownName="Ingresar al Sistema"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d5198ee-c7b7-43ab-9d16-b612cb25ba03"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="adfde571-e049-415c-b279-b050abd13aaf"
+                  name="Ingresar al Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5b18e8d6-f254-4435-9ac9-45ec9ea9bc52"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Generar Horarios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3f780e28-a7d8-44ea-8a6f-2470cc3e51f2"
+              LastKnownName="Generar Horarios"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f2653df-f2b5-4d2c-aff3-501a5eb581f9"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b6a11c3-c750-4308-858d-afb950e7f113"
+                  name="Generar Horarios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0832ec96-dcde-405c-b34a-7764c80ae2a5"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Personal"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8f5823dc-aa0e-45d2-880c-7612977521ec"
+              LastKnownName="Gestionar Personal"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a5820dd-a359-4669-be34-6fe1f1b7f924"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="add2b44b-a6fe-4aa4-92ce-cdd45fc277d2"
+                  name="Gestionar Personal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="79a9fce7-323a-4580-a3be-f3be7ac96929"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Cursos"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="be59b6d5-96e0-4bd6-a687-c5e5ba185b1e"
+              LastKnownName="Gestionar Cursos"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9feaa83f-decf-41f3-8a8c-626a2bc25d49"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ded297cf-aa16-4a68-b336-3b84b8ad6afd"
+                  name="Gestionar Cursos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f2817727-2a50-4f6a-bf9a-4aaa8fee39c9"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Ciclos"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bf09b403-0fc3-47ad-8438-0f9865a79a69"
+              LastKnownName="Gestionar Ciclos"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5eeba620-acc3-4740-a2a1-907435b24d56"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="744b9d4e-9b0a-4840-8cbf-fc693362f97e"
+                  name="Gestionar Ciclos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7fa109f2-d85b-4c3a-bdbc-73a91d009152"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Semestre"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b560125a-af31-4e57-8f66-b35e3394bd02"
+              LastKnownName="Gestionar Semestre"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="483c2fe5-b93d-46e8-969f-f227a0ce0048"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6f3c75c-b6ea-4e7b-ba36-d62f32d0234c"
+                  name="Gestionar Semestre"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0b785278-e9b3-4121-bf10-5556f07c021e"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Carga Docente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1a33e47c-2fd7-4c7e-914a-8372caa09fc0"
+              LastKnownName="Gestionar Carga Docente"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f379275-77fa-4b23-b8a6-05c3620fb97c"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="41fc90dc-cb35-4ffa-b9bc-ad7a7b020893"
+                  name="Gestionar Carga Docente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="725ae921-fc98-4d4c-a610-fc0e4f608f99"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Plan de Estudio"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="be3ca0e8-2bfb-464e-9b09-98969c7557d3"
+              LastKnownName="Gestionar Plan de Estudio"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18e83651-5cf1-4685-b815-0d519804c974"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ba60612-714c-44b6-badc-eeef321072b4"
+                  name="Gestionar Plan de Estudio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1d44f590-1764-409c-97cc-d9c6b1f0bacb"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Disponibilidad Personal"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cc752087-7ade-4251-bfa9-dfd7fe62eb54"
+              LastKnownName="Gestionar Disponibilidad Personal"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ba2a790-fee0-49f5-810d-f484e4d03119"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="455f1b1a-e418-4fb3-b040-ea9e049c7f83"
+                  name="Gestionar Disponibilidad Personal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="51b7014f-0ff5-4dc8-93a9-15eda9afa9da"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="Gestionar Horarios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="964a6164-1f17-41dc-8d60-32e83b9fe978"
+              LastKnownName="Gestionar Horarios"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a114e753-02d4-45f2-983e-370a2013e79b"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78ca9df0-74ca-4d53-b15e-c481d8c48973"
+                  name="Gestionar Horarios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="08e5b0f2-03e0-4493-b4cd-06e57dba6451"
+        name="Supervisor"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d1655bb2-8b9b-4deb-9b57-901e6890153b"
+            isDerived="false"
+            sourceEndRoleName="Supervisor"
+            targetEndRoleName="Ingresar al Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="299f570a-aa2d-4265-9124-b9326ab122fb"
+              LastKnownName="Ingresar al Sistema"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="96c768b9-396a-4a95-825f-5ce22b650a9c"
+                  name="Supervisor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="792c74d3-6942-4f03-b2ad-d12bb18e6212"
+                  name="Ingresar al Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2e7db28c-7540-472b-b937-d3e896c43228"
+            isDerived="false"
+            sourceEndRoleName="Supervisor"
+            targetEndRoleName="Generar Horarios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3f780e28-a7d8-44ea-8a6f-2470cc3e51f2"
+              LastKnownName="Generar Horarios"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6017e776-3d4b-47ed-a32c-9730f0a97fc6"
+                  name="Supervisor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="96519552-b819-4d3f-8e4c-3dc5d95d520d"
+                  name="Generar Horarios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="52d3af99-0a38-4ff7-80a3-a4be4b2a8792"
+        name="Soporte"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4e81e3c4-2675-45ee-a0fd-0ee22ca9e37c"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Ingresar al Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="299f570a-aa2d-4265-9124-b9326ab122fb"
+              LastKnownName="Ingresar al Sistema"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="730c2cb7-d116-455b-8f3f-4e9c0e0f7b43"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4507c7a-ede3-406e-8597-ea617e6de2d2"
+                  name="Ingresar al Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d380e71b-a13f-45ab-9c4f-f0e8ef4a3fdd"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Generar Horarios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3f780e28-a7d8-44ea-8a6f-2470cc3e51f2"
+              LastKnownName="Generar Horarios"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0328b78b-20c0-41d9-8661-b821c2946f5f"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3dcd33c-221c-4d70-999a-ca167ff57203"
+                  name="Generar Horarios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="52623b0d-41d7-4473-8593-d81d56bd9f4e"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Personal"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8f5823dc-aa0e-45d2-880c-7612977521ec"
+              LastKnownName="Gestionar Personal"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93642bf0-e99c-43b9-b47e-91651a00df1a"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="309370c5-8881-4e3b-9f54-fc75bcfc1968"
+                  name="Gestionar Personal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b64c1370-20d4-441b-93e6-f8a2089e5c1c"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Cursos"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="be59b6d5-96e0-4bd6-a687-c5e5ba185b1e"
+              LastKnownName="Gestionar Cursos"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e24d8c4f-32ae-4e1f-a77b-095b8bd5bc09"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ebeaac8-0dfb-496e-82a9-5fe8fef6470c"
+                  name="Gestionar Cursos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7c2dcc9b-f21e-40f7-b38c-03bbc8634833"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Ciclos"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bf09b403-0fc3-47ad-8438-0f9865a79a69"
+              LastKnownName="Gestionar Ciclos"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="519d4d52-949a-407d-8977-d73a6fb144fe"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e96143f3-8b1e-479d-ac24-0d88a5b86cf4"
+                  name="Gestionar Ciclos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="72dc31eb-f53b-488a-87f8-725ec10461c4"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Semestre"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b560125a-af31-4e57-8f66-b35e3394bd02"
+              LastKnownName="Gestionar Semestre"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="20bb34df-5a47-4ddc-a37b-d1531f53e60c"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54f1a9b3-2f9c-4720-8706-c661c909cafb"
+                  name="Gestionar Semestre"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f54dee76-e537-44f8-9a84-5f02707025eb"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Carga Docente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1a33e47c-2fd7-4c7e-914a-8372caa09fc0"
+              LastKnownName="Gestionar Carga Docente"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5bb61c44-bf4d-4824-81b4-f2a1e1534167"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb4ec46c-2a5d-4ac9-8f34-151244784e07"
+                  name="Gestionar Carga Docente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="419a5369-3dd9-495b-b2ee-8b7be03b297b"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Plan de Estudio"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="be3ca0e8-2bfb-464e-9b09-98969c7557d3"
+              LastKnownName="Gestionar Plan de Estudio"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="59c40980-6f38-4096-be01-68776999c6a7"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d739db8e-42e4-4a1f-8cf7-0df01e73f55a"
+                  name="Gestionar Plan de Estudio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="27208deb-3e56-446d-bc2b-80635998cd0f"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Disponibilidad Personal"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cc752087-7ade-4251-bfa9-dfd7fe62eb54"
+              LastKnownName="Gestionar Disponibilidad Personal"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b680ba4-2e4f-4a47-bccf-358ac53fe4a5"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="402c09d6-f523-4bb3-b45b-9408f277d368"
+                  name="Gestionar Disponibilidad Personal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d8d30c56-0e43-48b5-b180-068ca9f76a88"
+            isDerived="false"
+            sourceEndRoleName="Soporte"
+            targetEndRoleName="Gestionar Horarios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="964a6164-1f17-41dc-8d60-32e83b9fe978"
+              LastKnownName="Gestionar Horarios"
+              LastKnownLocation="SisHorario.Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5676a79d-2716-4375-ac5d-cd5824bfa776"
+                  name="Soporte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56fe3a99-57dc-4b29-b720-ae9c8fe5f827"
+                  name="Gestionar Horarios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5eb73ed2-663f-4d27-a8a1-a57ffdc6a302"
+        name="Ingresar al Sistema"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d7047f76-c290-4be0-abd1-36c3dd9e52ae"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+        name="Subsystem2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="299f570a-aa2d-4265-9124-b9326ab122fb"
+        name="Ingresar al Sistema"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3f780e28-a7d8-44ea-8a6f-2470cc3e51f2"
+        name="Generar Horarios"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8f5823dc-aa0e-45d2-880c-7612977521ec"
+        name="Gestionar Personal"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="964a6164-1f17-41dc-8d60-32e83b9fe978"
+        name="Gestionar Horarios"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="be59b6d5-96e0-4bd6-a687-c5e5ba185b1e"
+        name="Gestionar Cursos"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bf09b403-0fc3-47ad-8438-0f9865a79a69"
+        name="Gestionar Ciclos"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b560125a-af31-4e57-8f66-b35e3394bd02"
+        name="Gestionar Semestre"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a33e47c-2fd7-4c7e-914a-8372caa09fc0"
+        name="Gestionar Carga Docente"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cc752087-7ade-4251-bfa9-dfd7fe62eb54"
+        name="Gestionar Disponibilidad Personal"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="be3ca0e8-2bfb-464e-9b09-98969c7557d3"
+        name="Gestionar Plan de Estudio"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1954f4af-b074-4479-94a0-842fef8da0a7"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="SisHorario.Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
