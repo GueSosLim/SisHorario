@@ -31,7 +31,7 @@ namespace SisHorario.Infraestructura
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Configurations.Add(new CicloMapeo());
-            /*modelBuilder.Entity<Ambiente>().HasKey(k => k.CodigoAmbiente);
+            modelBuilder.Entity<Ambiente>().HasKey(k => k.CodigoAmbiente);
             modelBuilder.Entity<CargaPersonal>().HasKey(k => k.CodigoCargaPersonal);
             modelBuilder.Entity<Ciclo>().HasKey(k => k.CodigoCiclo);
             modelBuilder.Entity<Curso>().HasKey(k => k.CodigoCurso);
@@ -41,7 +41,7 @@ namespace SisHorario.Infraestructura
             modelBuilder.Entity<Horario>().HasKey(k => k.CodigoHorario);
             modelBuilder.Entity<Personal>().HasKey(k => k.CodigoPersonal);
             modelBuilder.Entity<PlanEstudio>().HasKey(k => k.CodigoPlanEstudio);
-            modelBuilder.Entity<Semestre>().HasKey(k => k.CodigoSemestre);*/
+            modelBuilder.Entity<Semestre>().HasKey(k => k.CodigoSemestre);
         }
     }
 }
